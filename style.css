@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sigmar', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Sigmar', sans-serif;
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-family: 'Sigmar', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#countdown > div {
+    text-align: center;
+    min-width: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 6vw;
+    }
+    #countdown {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 8vw;
+    }
+    #countdown {
+        font-size: 5vw;
+        flex-direction: column;
+    }
+}
